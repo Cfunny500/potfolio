@@ -1,0 +1,415 @@
+:root{
+    --bgcolor:linear-gradient(to top, #760079, #620055, #58004c, #38002c, #38002c, #38002c ) ;
+    --font-color:#fff;
+    --main:#ff7200;
+     --big-font:5rem;
+     --p-font:30px;
+ }
+ body{
+    background: var(--bgcolor);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+       font-style: normal;
+       height: 100%;
+       box-sizing: border-box;
+       width: 100%;
+    
+ }
+ header{
+    height: 150px;
+    width: 100%;
+    top:0;
+    z-index: 1000;
+    right:0;
+    position: fixed;
+    margin: 0px;
+    display: flex;
+    backdrop-filter:blur(20px);
+    align-items: center;
+    justify-content: space-between;  
+    background-color: rgba(255, 255, 255, .1) ;
+    box-shadow: 0px 10px 20px rgba(0, 0,0, .3);
+ }
+ ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+ }
+ a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 25px;
+    transition: all 1.5s ease-out;
+    
+ }
+ a:hover{
+    color:var(--main);
+    
+ }
+ a .active{
+    color: var(--main);
+ }
+ .logo{
+    height: 110px;
+    font-size: var(--big-font);
+    font-weight: bold;
+    text-align: center;
+   gap: 20px;
+   padding: 20px;
+   letter-spacing: 5px;
+   text-decoration: none;
+ }
+ 
+ .log{
+    font-size: var(--big-font);
+    color:var(--main); 
+    
+ }
+ .menu-btn{
+    float: right;
+    text-align: center;
+    transform: translatex(-10px);
+    box-shadow: 10px 10px 40px rgba(0, 0,0, .3), -10px -10px 40px rgba(0, 0,0, .3);
+    padding: 30px 20px;
+    border-radius: 20px;
+    align-items: center;
+    transition: all 5s ease;
+ }
+ .menu-btn:hover{
+    animation-name: myanimation;
+    animation-duration: 2s;
+ }
+ section{
+    height: auto;
+    display: flex;
+    gap:200px;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin-top: 200px;
+    
+ }
+ .home{
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+    justify:center;
+    justify-content: space-between;
+ }
+ .home-text{
+    margin: auto;
+    gap: 5px;
+    letter-spacing: 5px;
+ }
+ .home-text h2{
+ font-size: 4rem;
+ }
+ .home-text h2 span{
+    color:var(--main);
+    
+ }
+ .buttons button{
+    height: 50px;
+    color: #000;
+    transition: all 0.9s ease-out;
+ }
+ .buttons{
+    justify-content: space-between;
+    display: flex;
+    width: 400px;
+ }
+ .btn-1{
+    width: 100px;
+    border: 1px solid #000;
+    background: transparent;
+ }
+ .btn-2{
+    border: 1px solid #000;
+    width: 200px;
+    background: var(--main);
+ }
+ .btn-1:hover{
+    background: rgba(255, 255, 255, .1);
+    transform: translateY(-10px);
+ }
+ .btn-2:hover{
+    background: rgba(255, 255, 255, .1);
+    transform: translateY(-10px);
+ }
+ .img{
+   scroll-behavior: smooth;
+    height: 800px;
+    width: 700px;
+    overflow:hidden;
+    position: relative;
+    background: linear-gradient(160deg, #A9FF0E, #FF0E0E, #FF560E);
+    border-radius: 25%;
+    transition: all 2s ease-in-out;
+    
+ }
+ img{
+    height: 800px;
+    margin: auto;
+    width: 700px;
+    border-radius: 100px;
+    object-fit: cover;
+    transition: all ease-in-out;
+ }
+
+ img:hover{
+   width: 900px;
+   height: 1000px;
+   transform: translate(-130px);
+ }
+ 
+ 
+ .share{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 20px;
+ }
+ 
+ 
+ .social a{
+    margin: auto;
+    font-size: 50px;
+    color:var(--main);
+    transition: all 1s ease-in-out;
+ }
+ .social{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 200px;
+ }
+ .social a:hover{
+    color: #fff;
+    transform: translateY(-10px);
+    font-size:60px;
+ }
+ .empty{
+    height: 400px;
+ }
+ .hr{
+    margin-top: 30%;
+ }
+ #about{
+   color: #fff;
+   display:flex;
+   flex-direction: column;
+ }
+ 
+  .hre{
+   width: 400px;
+   height: 10px;
+   background: #fff;
+   margin-left: 10px;
+   
+ }
+ #about div h1{
+   font-size: var(--big-font);
+   font-weight: bolder;
+ }
+ #about div p{
+   font-size: var(--p-font);
+   font-weight: bold;
+   letter-spacing: 5px;
+ }
+ #skill{
+   color:#fff;
+   height: auto;
+ }
+ .all{
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   overflow: hidden;
+   height:auto;
+   width: 95%;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: rgba(0, 0,0, .3);
+   box-shadow: 10px 10px 20px rgba(0, 0,0, .3), -10px -10px 20px rgba(0, 0,0, .3);
+   
+ }
+ #skill div h1{
+      font-size: var(--big-font);
+   font-weight: bold;
+ }
+ #skill div i{
+   font-size: var(--p-font);
+   font-weight: bold;
+   letter-spacing: 5px;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: auto;
+   padding: 10px;
+ }
+  #skill div i .html{
+    height: 50px;
+    width: 90%;
+    background: #f0f0f0;
+  }
+  
+  #skill div i .html div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 98%;
+    background: var(--main);
+  }
+    #skill div i em{
+      margin: auto;
+      font-size: var(--p-font);
+      font-weight: bold;
+    }
+      #skill div i .css{
+        height: 50px;
+        width: 90%;
+        background: #f0f0f0;
+      }
+        #skill div i .js{
+          height: 50px;
+        width: 90%;
+        background: #f0f0f0;
+        }
+      #skill div i .css div{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 79%;
+        background: var(--main);
+          }
+      #skill div i .js div{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 25%;
+        background: var(--main);
+      }
+      #skill ul{
+        width: 93%;
+        margin: auto;
+        gap:1px;
+        height:200px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px rgba(0, 0,0, .3), -10px -10px 20px rgba(0, 0,0, .3);
+        background: #f5f2f0;
+        
+      }
+      #skill ul li{
+        width: 30%;
+        color: #000;
+        text-align: center;
+        padding: 0px;
+        border-radius: 10px;
+        border-right: 1px solid black;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      #skill .last{
+        border: non
+      }
+      #skill li span{
+        font-size: 75px;
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+        display: block;
+        line-height: 150px;
+      }
+      #skill li p{
+        font-size: 30px;
+        height:30px;
+        font-weight: bold;
+        text-align: center;
+      }
+      #myprice .myprice{
+        width: 100%;
+        position: relative;
+        display: flex;
+        gap:1px;
+        height:auto;
+        
+      }
+      #myprice .mypr{
+        display: flex;
+        flex-direction: column;
+        width: 47%;
+        font-size: var(--p-font);
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px rgba(0, 0,0, .3), -10px -10px 20px rgba(0, 0,0, .3);
+        background: #f5f2f0;
+        opacity: 60%;
+        
+     padding: 0px 0px 0px 0px;
+      }
+      #myprice h1{
+        font-size: var(--big-font);
+   font-weight: bold;
+      } 
+         #myprice .mypri{
+        display: flex;
+        flex-direction: column;
+        width: 47%;
+        font-size: var(--p-font);
+        text-align: center;
+        position: absolute;
+        right:0;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px rgba(0, 0,0, .3), -10px -10px 20px rgba(0, 0,0, .3);
+        background: #f5f2f0;
+        padding: 0px;
+        opacity: 60%;
+      
+      }
+      #myprice li{
+        border-bottom: 1px solid black;
+        height: 70px;
+        width: 101%;
+        transform: translateX(-1px);
+        font-weight: bold;
+        text-align: center;
+      }
+      #myprice .amount{
+        height:100px;
+      }
+      #myprice .amount span{
+        font-size: 60px;
+        font-weight: bold;
+        display: block;
+      }
+      #myprice .basic{
+        font-size: 70px;
+        font-weight: bold;
+        height: 130px;
+        background: #994400;
+      }
+        #myprice .pro{
+        font-size: 70px;
+        font-weight: bold;
+        height: 130px;
+        background: #FF7200;
+      }
+      #myprice li a{
+        font-size: 50px;
+        background: #4C4947;
+      }
+      #myprice .mypri:hover{
+        opacity: 100%;
+      }
+      #myprice .mypr:hover{
+        opacity: 100%;
+      }
